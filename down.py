@@ -11,8 +11,9 @@ from tqdm import tqdm
 
 # --- Configuration ---
 # It's highly recommended to set these as environment variables for security
-CLIENT_ID = "6ocbezNVfJqS6z8D1GB1Y1l7pL2kr6fKSGKdB0S6aZyDTb66"
-CLIENT_SECRET = "9KHqcX3jknjXdzaSg6GGFvmH2VlDJPFvDlqdcVmzG5xkCG4vCvbZOuGdRRsiaxCi"
+CLIENT_ID = os.getenv("APS_CLIENT_ID")
+CLIENT_SECRET = os.getenv("APS_CLIENT_SECRET")
+
 REDIRECT_URI = "http://localhost:8080/callback"
 SCOPES = "data:read"  # Correct scope per official documentation.
 DOWNLOAD_DIR = "Fusion360_Backup_Final"
