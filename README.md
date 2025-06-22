@@ -21,6 +21,7 @@ Files are organized by project name. However, any subfolders inside each project
 
 - Python 3.7 or higher
 - Required Python packages, which can be installed via pip:
+- The down.py file
 ```bash
 pip install tqdm requests
 ```
